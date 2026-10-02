@@ -25,6 +25,9 @@ ALLOWED_HOSTS = [
     if host.strip()
 ]
 
+if os.environ.get("RENDER_EXTERNAL_HOSTNAME"):
+    ALLOWED_HOSTS.append(os.environ["RENDER_EXTERNAL_HOSTNAME"])
+
 
 # =========================
 # APPLICATIONS
@@ -51,6 +54,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -92,30 +96,14 @@ WSGI_APPLICATION = "config.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": os.environ.get(
-            "DB_NAME",
-            "nagendra_portfolio"
-        ),
-        "USER": os.environ.get(
-            "DB_USER",
-            "portfolio_user"
-        ),
-        "PASSWORD": os.environ.get(
-            "DB_PASSWORD",
-            ""
-        ),
-        "HOST": os.environ.get(
-            "DB_HOST",
-            "localhost"
-        ),
-        "PORT": os.environ.get(
-            "DB_PORT",
-            "3306"
-        ),
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.environ.get("DB_NAME"),
+        "USER": os.environ.get("DB_USER"),
+        "PASSWORD": os.environ.get("DB_PASSWORD"),
+        "HOST": os.environ.get("DB_HOST"),
+        "PORT": os.environ.get("DB_PORT", "5432"),
     }
 }
-
 
 # =========================
 # PASSWORD VALIDATION

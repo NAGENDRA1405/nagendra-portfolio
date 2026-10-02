@@ -44,3 +44,7 @@ backend/media/
 
 # Python cache / testing
 .pytest_cache/
+
+
+# Django collected static files
+backend/staticfiles/
