@@ -7,7 +7,7 @@ function Certificates() {
 
     useEffect(() => {
         axios
-            .get("http://127.0.0.1:8000/api/certificates/")
+            .get("https://nagendra-portfolio-backend.onrender.com/api/certificates/")
             .then((response) => {
                 setCertificates(response.data);
                 setLoading(false);

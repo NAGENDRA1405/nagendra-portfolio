@@ -7,7 +7,7 @@ function Projects() {
 
     useEffect(() => {
         axios
-            .get("http://127.0.0.1:8000/api/projects/")
+            .get("https://nagendra-portfolio-backend.onrender.com/api/projects/")
             .then((response) => {
                 setProjects(response.data);
                 setLoading(false);

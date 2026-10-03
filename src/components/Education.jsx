@@ -7,7 +7,7 @@ function Education() {
 
     useEffect(() => {
         axios
-            .get("http://127.0.0.1:8000/api/education/")
+            .get("https://nagendra-portfolio-backend.onrender.com/api/education/")
             .then((response) => {
                 setEducation(response.data);
                 setLoading(false);
