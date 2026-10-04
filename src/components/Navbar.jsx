@@ -27,7 +27,7 @@ function Navbar() {
                     onClick={closeMenu}
                     className="flex items-center gap-3"
                 >
-                    <span className="w-2.5 h-2.5 bg-orange-500 rounded-full"></span>
+                    <span className="w-2.5 h-2.5 bg-violet-500 rounded-full"></span>
 
                     <span className="text-white font-bold tracking-wide text-lg">
                         NAGENDRA
@@ -42,7 +42,7 @@ function Navbar() {
                             href={link.href}
                             className={`text-[11px] tracking-wide transition ${
                                 index === 0
-                                    ? "text-white border-b border-orange-500 pb-2"
+                                    ? "text-white border-b border-violet-500 pb-2"
                                     : "text-gray-500 hover:text-white"
                             }`}
                         >
@@ -54,7 +54,7 @@ function Navbar() {
                 {/* Contact */}
                 <a
                     href="#contact"
-                    className="hidden md:flex border border-white/20 px-5 py-3 text-xs tracking-wide text-white hover:border-orange-500 hover:text-orange-400 transition"
+                    className="hidden md:flex border border-white/20 px-5 py-3 text-xs tracking-wide text-white hover:border-violet-500 hover:text-cyan-400 transition"
                 >
                     LET'S TALK ↗
                 </a>
@@ -79,7 +79,7 @@ function Navbar() {
                                 key={link.href}
                                 href={link.href}
                                 onClick={closeMenu}
-                                className="text-xs tracking-wide text-gray-400 hover:text-orange-400 transition"
+                                className="text-xs tracking-wide text-gray-400 hover:text-cyan-400 transition"
                             >
                                 {link.label}
                             </a>
@@ -88,7 +88,7 @@ function Navbar() {
                         <a
                             href="#contact"
                             onClick={closeMenu}
-                            className="border border-orange-500 text-orange-400 px-4 py-3 text-center text-xs"
+                            className="border border-violet-500 text-cyan-400 px-4 py-3 text-center text-xs"
                         >
                             LET'S TALK ↗
                         </a>

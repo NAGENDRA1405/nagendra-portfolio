@@ -34,7 +34,7 @@ function About() {
                 <div className="flex justify-between items-end mb-14 md:mb-20">
 
                     <div>
-                        <p className="text-orange-500 text-[10px] md:text-xs tracking-[0.3em] uppercase mb-4">
+                        <p className="text-violet-400 text-[10px] md:text-xs tracking-[0.3em] uppercase mb-4">
                             01 // ABOUT
                         </p>
 
@@ -78,12 +78,12 @@ function About() {
                     {/* RIGHT */}
                     <div className="lg:col-span-5">
 
-                        <div className="relative border border-white/10 p-7 md:p-9 hover:border-orange-500/40 transition duration-500">
+                        <div className="relative border border-white/10 p-7 md:p-9 hover:border-violet-500/40 transition duration-500">
 
                             {/* Small accent */}
-                            <div className="absolute top-0 left-0 w-12 h-[2px] bg-orange-500"></div>
+                            <div className="absolute top-0 left-0 w-12 h-[2px] bg-violet-500"></div>
 
-                            <p className="text-orange-500 text-[10px] tracking-[0.25em] mb-7">
+                            <p className="text-violet-400 text-[10px] tracking-[0.25em] mb-7">
                                 CURRENT DIRECTION
                             </p>
 
@@ -118,17 +118,17 @@ function About() {
 
                             <div className="flex justify-between items-start mb-12">
 
-                                <span className="text-orange-500 text-xs tracking-widest">
+                                <span className="text-violet-400 text-xs tracking-widest">
                                     {fact.number}
                                 </span>
 
-                                <span className="text-gray-700 text-xs group-hover:text-orange-500 transition">
+                                <span className="text-gray-700 text-xs group-hover:text-violet-400 transition">
                                     ↗
                                 </span>
 
                             </div>
 
-                            <h3 className="text-xl font-bold tracking-wide mb-4 group-hover:text-orange-400 transition">
+                            <h3 className="text-xl font-bold tracking-wide mb-4 group-hover:text-cyan-400 transition">
                                 {fact.title}
                             </h3>
 

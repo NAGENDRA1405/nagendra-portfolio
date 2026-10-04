@@ -30,7 +30,7 @@ function Experience() {
                 <div className="flex justify-between items-end mb-16">
 
                     <div>
-                        <p className="text-orange-500 text-xs tracking-[0.25em] uppercase mb-4">
+                        <p className="text-violet-400 text-xs tracking-[0.25em] uppercase mb-4">
                             // Career
                         </p>
 
@@ -67,14 +67,14 @@ function Experience() {
                             >
 
                                 <div className="lg:col-span-1">
-                                    <span className="text-orange-500 text-xs">
+                                    <span className="text-violet-400 text-xs">
                                         {String(index + 1).padStart(2, "0")}
                                     </span>
                                 </div>
 
                                 <div className="lg:col-span-7">
 
-                                    <h3 className="text-2xl md:text-3xl font-bold mb-3 group-hover:text-orange-400 transition">
+                                    <h3 className="text-2xl md:text-3xl font-bold mb-3 group-hover:text-cyan-400 transition">
                                         {experience.role}
                                     </h3>
 

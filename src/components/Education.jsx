@@ -30,7 +30,7 @@ function Education() {
                 <div className="flex justify-between items-end mb-16">
 
                     <div>
-                        <p className="text-orange-500 text-xs tracking-[0.25em] uppercase mb-4">
+                        <p className="text-violet-400 text-xs tracking-[0.25em] uppercase mb-4">
                             // Education
                         </p>
 
@@ -63,12 +63,12 @@ function Education() {
                         {education.map((item, index) => (
                             <div
                                 key={item.id}
-                                className="border border-white/10 p-8 md:p-10 hover:border-orange-500/40 transition"
+                                className="border border-white/10 p-8 md:p-10 hover:border-violet-500/40 transition"
                             >
 
                                 <div className="flex justify-between mb-12">
 
-                                    <span className="text-orange-500 text-xs">
+                                    <span className="text-violet-400 text-xs">
                                         {String(index + 1).padStart(2, "0")}
                                     </span>
 
@@ -82,7 +82,7 @@ function Education() {
                                     {item.degree}
                                 </h3>
 
-                                <p className="text-orange-400 mb-5">
+                                <p className="text-cyan-400 mb-5">
                                     {item.field}
                                 </p>
 

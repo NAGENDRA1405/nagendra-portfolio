@@ -20,7 +20,7 @@ function Home() {
                 <div className="flex flex-col sm:flex-row justify-between gap-4 sm:gap-6 mb-12 sm:mb-16">
 
                     <div className="flex items-center gap-3 text-[9px] sm:text-xs tracking-[0.18em] sm:tracking-[0.25em] text-gray-500">
-                        <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+                        <span className="w-2 h-2 rounded-full bg-violet-500 animate-pulse"></span>
 
                         AVAILABLE FOR OPPORTUNITIES
                     </div>
@@ -38,7 +38,7 @@ function Home() {
                     <div className="lg:col-span-7 w-full">
 
                         {/* Role */}
-                        <p className="text-orange-500 text-[10px] sm:text-xs tracking-[0.25em] sm:tracking-[0.3em] mb-5 sm:mb-6">
+                        <p className="text-violet-400 text-[10px] sm:text-xs tracking-[0.25em] sm:tracking-[0.3em] mb-5 sm:mb-6">
                             SOFTWARE ENGINEER
                         </p>
 
@@ -71,7 +71,7 @@ function Home() {
                             ].map((skill) => (
                                 <span
                                     key={skill}
-                                    className="border border-white/10 px-3 sm:px-4 py-2 text-[9px] sm:text-[10px] tracking-[0.12em] sm:tracking-[0.18em] text-gray-400 hover:border-orange-500 hover:text-orange-400 transition"
+                                    className="border border-white/10 px-3 sm:px-4 py-2 text-[9px] sm:text-[10px] tracking-[0.12em] sm:tracking-[0.18em] text-gray-400 hover:border-violet-500 hover:text-cyan-400 transition"
                                 >
                                     {skill}
                                 </span>
@@ -84,7 +84,7 @@ function Home() {
 
                             <a
                                 href="#projects"
-                                className="bg-orange-500 text-black px-6 sm:px-7 py-3.5 sm:py-4 text-[10px] sm:text-xs font-semibold tracking-[0.12em] sm:tracking-[0.15em] text-center hover:bg-orange-400 transition"
+                                className="bg-violet-500 text-black px-6 sm:px-7 py-3.5 sm:py-4 text-[10px] sm:text-xs font-semibold tracking-[0.12em] sm:tracking-[0.15em] text-center hover:bg-violet-400 transition"
                             >
                                 VIEW WORK ↘
                             </a>
@@ -93,7 +93,7 @@ function Home() {
                                 href="/Nagendra_G_Combined_Resume.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="border border-white/20 px-6 sm:px-7 py-3.5 sm:py-4 text-[10px] sm:text-xs tracking-[0.12em] sm:tracking-[0.15em] text-white text-center hover:border-orange-500 hover:text-orange-400 transition"
+                                className="border border-white/20 px-6 sm:px-7 py-3.5 sm:py-4 text-[10px] sm:text-xs tracking-[0.12em] sm:tracking-[0.15em] text-white text-center hover:border-violet-500 hover:text-cyan-400 transition"
                             >
                                 ↓ &nbsp; RESUME
                             </a>
@@ -128,7 +128,7 @@ function Home() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="LeetCode"
-                                className="text-gray-500 hover:text-orange-400 transition"
+                                className="text-gray-500 hover:text-cyan-400 transition"
                             >
                                 <span className="font-bold text-sm">
                                     LC
@@ -138,7 +138,7 @@ function Home() {
                             <a
                                 href="mailto:nagendragudemane@gmail.com"
                                 aria-label="Email"
-                                className="text-gray-500 hover:text-orange-400 transition text-xl"
+                                className="text-gray-500 hover:text-cyan-400 transition text-xl"
                             >
                                 <FaEnvelope />
                             </a>

@@ -6,55 +6,165 @@ html {
 
 body {
     margin: 0;
-    background: #0a0a0a;
+    background: #020207;
     color: #f5f5f5;
     font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    overflow-x: hidden;
 }
 
-* {
-    box-sizing: border-box;
+/* =========================================
+   PERMANENT STAR FIELD
+   ========================================= */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    /* Keep stars visible above the background */
+    z-index: 0;
+
+    background-image:
+        radial-gradient(
+            circle,
+            rgba(255, 255, 255, 0.95) 1px,
+            transparent 1.5px
+        ),
+        radial-gradient(
+            circle,
+            rgba(125, 211, 252, 0.85) 1px,
+            transparent 1.5px
+        ),
+        radial-gradient(
+            circle,
+            rgba(196, 181, 253, 0.8) 1px,
+            transparent 1.5px
+        );
+
+    background-size:
+        100px 100px,
+        170px 170px,
+        240px 240px;
+
+    background-position:
+        20px 20px,
+        70px 100px,
+        140px 40px;
+
+    opacity: 0.8;
+
+    animation: starsMove 60s linear infinite;
 }
+
+/* =========================================
+   GALAXY / OUTER SPACE BACKGROUND
+   ========================================= */
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    z-index: -1;
+
+    background:
+        /* Purple nebula */
+        radial-gradient(
+            ellipse 70% 35% at 10% 25%,
+            rgba(124, 58, 237, 0.30),
+            transparent 70%
+        ),
+
+        /* Cyan nebula */
+        radial-gradient(
+            ellipse 65% 30% at 90% 45%,
+            rgba(14, 165, 233, 0.25),
+            transparent 70%
+        ),
+
+        /* Violet lower glow */
+        radial-gradient(
+            ellipse 55% 35% at 50% 80%,
+            rgba(139, 92, 246, 0.22),
+            transparent 70%
+        ),
+
+        /* Deep space */
+        #020207;
+}
+
+/* =========================================
+   STAR ANIMATION
+   ========================================= */
+
+@keyframes starsMove {
+    from {
+        background-position:
+            20px 20px,
+            70px 100px,
+            140px 40px;
+    }
+
+    to {
+        background-position:
+            120px 120px,
+            -100px 250px,
+            380px -200px;
+    }
+}
+
+/* =========================================
+   COSMIC SELECTION
+   ========================================= */
 
 ::selection {
-    background: #f97316;
-    color: #000;
+    background: #8b5cf6;
+    color: #ffffff;
 }
 
-/* Scrollbar */
+/* =========================================
+   SCROLLBAR
+   ========================================= */
 
 ::-webkit-scrollbar {
     width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #0a0a0a;
+    background: #020207;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #333;
+    background: #333344;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #f97316;
+    background: #8b5cf6;
 }
 
-/* Portfolio Grid */
+/* =========================================
+   PORTFOLIO BACKGROUND — NO GRID
+   ========================================= */
 
 .portfolio-grid {
-    background-image:
-        linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
-
-    background-size: 60px 60px;
-
-    mask-image: linear-gradient(
-        to bottom,
-        black,
-        transparent 90%
-    );
+    background-image: none !important;
+    mask-image: none;
 }
 
-/* Hero Typography */
+/* =========================================
+   HERO TYPOGRAPHY
+   ========================================= */
 
 .hero-name {
     font-size: clamp(3.5rem, 10vw, 8.5rem);
@@ -65,7 +175,137 @@ body {
     white-space: nowrap;
 }
 
-/* Animations */
+/* =========================================
+   COSMIC COLOR SYSTEM
+   ========================================= */
+
+/*
+   Primary:
+   Violet  #8b5cf6
+
+   Secondary:
+   Cyan   #38bdf8
+
+   Light:
+   Cyan   #67e8f9
+
+   Soft:
+   Violet #a78bfa
+*/
+
+/* Text colors */
+
+.text-orange-300 {
+    color: #67e8f9 !important;
+}
+
+.text-cyan-400 {
+    color: #38bdf8 !important;
+}
+
+.text-violet-400 {
+    color: #a78bfa !important;
+}
+
+.text-orange-600 {
+    color: #8b5cf6 !important;
+}
+
+/* Background colors */
+
+.bg-orange-400 {
+    background-color: #38bdf8 !important;
+}
+
+.bg-violet-500 {
+    background-color: #8b5cf6 !important;
+}
+
+.bg-orange-600 {
+    background-color: #7c3aed !important;
+}
+
+/* Border colors */
+
+.border-orange-400 {
+    border-color: #38bdf8 !important;
+}
+
+.border-violet-500 {
+    border-color: #8b5cf6 !important;
+}
+
+.border-orange-600 {
+    border-color: #7c3aed !important;
+}
+
+/* Hover text */
+
+.hover\:text-orange-300:hover {
+    color: #67e8f9 !important;
+}
+
+.hover\:text-cyan-400:hover {
+    color: #38bdf8 !important;
+}
+
+.hover\:text-violet-400:hover {
+    color: #a78bfa !important;
+}
+
+/* Hover backgrounds */
+
+.hover\:bg-orange-400:hover {
+    background-color: #38bdf8 !important;
+}
+
+.hover\:bg-violet-500:hover {
+    background-color: #8b5cf6 !important;
+}
+
+/* Hover borders */
+
+.hover\:border-violet-500:hover {
+    border-color: #8b5cf6 !important;
+}
+
+/* =========================================
+   SUBTLE HOVER EFFECT
+   ========================================= */
+
+section {
+    transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-2px);
+}
+
+/* Cards / bordered elements */
+
+section article,
+section .group,
+section [class*="border"] {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+section article:hover,
+section .group:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.35),
+        0 0 25px rgba(139, 92, 246, 0.08);
+}
+
+/* =========================================
+   FADE UP ANIMATION
+   ========================================= */
 
 @keyframes fadeUp {
     from {
@@ -83,6 +323,10 @@ body {
     animation: fadeUp 0.8s ease-out forwards;
 }
 
+/* =========================================
+   PULSE DOT
+   ========================================= */
+
 @keyframes pulseDot {
     0%,
     100% {
@@ -98,7 +342,9 @@ body {
     animation: pulseDot 2s ease-in-out infinite;
 }
 
-/* Mobile */
+/* =========================================
+   MOBILE
+   ========================================= */
 
 @media (max-width: 768px) {
     .hero-name {
@@ -109,5 +355,35 @@ body {
     .portfolio-grid {
         background-size: 40px 40px;
     }
+
+    /* Keep mobile interaction subtle */
+
+    section:hover {
+        transform: none;
+    }
+
+    section article:hover,
+    section .group:hover {
+        transform: translateY(-2px);
+    }
 }
 
+/* =========================================
+   ACCESSIBILITY
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    body::before {
+        animation: none;
+    }
+
+    section,
+    section article,
+    section .group {
+        transition: none;
+    }
+}

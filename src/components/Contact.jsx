@@ -19,7 +19,7 @@ function Contact() {
                 {/* Header */}
                 <div className="mb-20">
 
-                    <p className="text-orange-500 text-xs tracking-[0.25em] uppercase mb-5">
+                    <p className="text-violet-400 text-xs tracking-[0.25em] uppercase mb-5">
                         // Contact
                     </p>
 
@@ -41,7 +41,7 @@ function Contact() {
 
                         <a
                             href="mailto:nagendragudemane@gmail.com"
-                            className="inline-flex bg-white text-black px-7 py-4 text-sm font-semibold hover:bg-orange-500 transition"
+                            className="inline-flex bg-white text-black px-7 py-4 text-sm font-semibold hover:bg-violet-500 transition"
                         >
                             SEND ME AN EMAIL →
                         </a>
@@ -67,7 +67,7 @@ function Contact() {
                                     </span>
                                 </div>
 
-                                <span className="text-gray-600 group-hover:text-orange-400 transition">
+                                <span className="text-gray-600 group-hover:text-cyan-400 transition">
                                     ↗
                                 </span>
                             </a>
@@ -86,7 +86,7 @@ function Contact() {
                                     </span>
                                 </div>
 
-                                <span className="text-gray-600 group-hover:text-orange-400 transition">
+                                <span className="text-gray-600 group-hover:text-cyan-400 transition">
                                     ↗
                                 </span>
                             </a>
@@ -105,7 +105,7 @@ function Contact() {
                                     </span>
                                 </div>
 
-                                <span className="text-gray-600 group-hover:text-orange-400 transition">
+                                <span className="text-gray-600 group-hover:text-cyan-400 transition">
                                     ↗
                                 </span>
                             </a>
@@ -122,7 +122,7 @@ function Contact() {
                                     </span>
                                 </div>
 
-                                <span className="text-gray-600 group-hover:text-orange-400 transition">
+                                <span className="text-gray-600 group-hover:text-cyan-400 transition">
                                     ↗
                                 </span>
                             </a>

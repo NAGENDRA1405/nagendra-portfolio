@@ -181,7 +181,7 @@ function Skills() {
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
 
                     <div>
-                        <p className="text-orange-500 text-xs tracking-[0.25em] uppercase mb-4">
+                        <p className="text-violet-400 text-xs tracking-[0.25em] uppercase mb-4">
                              Skills
                         </p>
 
@@ -205,7 +205,7 @@ function Skills() {
                             onClick={() => setActiveCategory(category)}
                             className={`px-5 py-3 text-[10px] tracking-wide transition ${
                                 activeCategory === category
-                                    ? "bg-orange-500 text-black"
+                                    ? "bg-violet-500 text-black"
                                     : "text-gray-500 hover:text-white"
                             }`}
                         >
@@ -221,7 +221,7 @@ function Skills() {
                     {filteredSkills.map((skill) => (
                         <div
                             key={skill.name}
-                            className="group min-h-[150px] border border-white/10 bg-white/[0.02] p-6 flex flex-col justify-between hover:border-orange-500/50 hover:bg-white/[0.04] transition-all duration-300"
+                            className="group min-h-[150px] border border-white/10 bg-white/[0.02] p-6 flex flex-col justify-between hover:border-violet-500/50 hover:bg-white/[0.04] transition-all duration-300"
                         >
 
                             <div

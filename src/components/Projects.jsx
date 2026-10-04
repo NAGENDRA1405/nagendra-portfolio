@@ -30,7 +30,7 @@ function Projects() {
                 <div className="flex justify-between items-end mb-16">
 
                     <div>
-                        <p className="text-orange-500 text-xs tracking-[0.25em] uppercase mb-4">
+                        <p className="text-violet-400 text-xs tracking-[0.25em] uppercase mb-4">
                              Work
                         </p>
 
@@ -63,12 +63,12 @@ function Projects() {
                         {projects.map((project, index) => (
                             <article
                                 key={project.id}
-                                className="group border border-white/10 bg-white/[0.02] p-8 md:p-10 min-h-[350px] flex flex-col justify-between hover:border-orange-500/40 transition"
+                                className="group border border-white/10 bg-white/[0.02] p-8 md:p-10 min-h-[350px] flex flex-col justify-between hover:border-violet-500/40 transition"
                             >
 
                                 <div className="flex justify-between items-start">
 
-                                    <span className="text-orange-500 text-xs tracking-widest">
+                                    <span className="text-violet-400 text-xs tracking-widest">
                                         {String(index + 1).padStart(2, "0")}
                                     </span>
 
@@ -80,7 +80,7 @@ function Projects() {
 
                                 <div>
 
-                                    <h3 className="text-3xl md:text-4xl font-bold mb-5 group-hover:text-orange-400 transition">
+                                    <h3 className="text-3xl md:text-4xl font-bold mb-5 group-hover:text-cyan-400 transition">
                                         {project.title}
                                     </h3>
 
@@ -110,7 +110,7 @@ function Projects() {
                                             href={project.github_url}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-xs text-gray-500 hover:text-orange-400 transition"
+                                            className="text-xs text-gray-500 hover:text-cyan-400 transition"
                                         >
                                             GITHUB ↗
                                         </a>
@@ -121,7 +121,7 @@ function Projects() {
                                             href={project.live_url}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-xs text-gray-500 hover:text-orange-400 transition"
+                                            className="text-xs text-gray-500 hover:text-cyan-400 transition"
                                         >
                                             LIVE DEMO ↗
                                         </a>

@@ -30,7 +30,7 @@ function Certificates() {
                 <div className="flex justify-between items-end mb-16">
 
                     <div>
-                        <p className="text-orange-500 text-xs tracking-[0.25em] uppercase mb-4">
+                        <p className="text-violet-400 text-xs tracking-[0.25em] uppercase mb-4">
                              Certifications
                         </p>
 
@@ -63,12 +63,12 @@ function Certificates() {
                         {certificates.map((certificate, index) => (
                             <div
                                 key={certificate.id}
-                                className="border border-white/10 p-8 md:p-10 hover:border-orange-500/40 transition"
+                                className="border border-white/10 p-8 md:p-10 hover:border-violet-500/40 transition"
                             >
 
                                 <div className="flex justify-between mb-12">
 
-                                    <span className="text-orange-500 text-xs">
+                                    <span className="text-violet-400 text-xs">
                                         {String(index + 1).padStart(2, "0")}
                                     </span>
 
@@ -82,7 +82,7 @@ function Certificates() {
                                     {certificate.title}
                                 </h3>
 
-                                <p className="text-orange-400 mb-5">
+                                <p className="text-cyan-400 mb-5">
                                     {certificate.issuer}
                                 </p>
 
@@ -95,7 +95,7 @@ function Certificates() {
                                         href={certificate.certificate}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-flex border border-orange-500 text-orange-400 px-5 py-3 text-xs hover:bg-orange-500 hover:text-black transition"
+                                        className="inline-flex border border-violet-500 text-cyan-400 px-5 py-3 text-xs hover:bg-violet-500 hover:text-black transition"
                                     >
                                         VIEW CERTIFICATE ↗
                                     </a>
