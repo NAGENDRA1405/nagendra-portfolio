@@ -90,7 +90,7 @@ function Home() {
                             </a>
 
                             <a
-                                href="/Nagendra_G_Software_Engineer2.pdf"
+                                href="/Nagendra_G_Combined_Resume.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="border border-white/20 px-6 sm:px-7 py-3.5 sm:py-4 text-[10px] sm:text-xs tracking-[0.12em] sm:tracking-[0.15em] text-white text-center hover:border-orange-500 hover:text-orange-400 transition"
